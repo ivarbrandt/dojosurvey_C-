@@ -1,3 +1,4 @@
+using dojosurvey.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,15 +13,9 @@ namespace dojosurvey.controllers
         }
 
         [HttpPost("result")]
-        public IActionResult Result(string Name, string Location, string Language, string Comment)
+        public IActionResult Result(Survey mySurvey)
         {
-            ViewBag.Name = Name;
-            ViewBag.Location = Location;
-            ViewBag.Language = Language;
-            ViewBag.Comment = Comment;
-
-            return View();
-
+            return View(mySurvey);
         }
     }
 }

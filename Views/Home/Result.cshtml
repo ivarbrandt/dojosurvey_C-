@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <title>Submitted Info</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="justify-content-left">
+        <h1 class="display-5" style="text-decoration: underline">
+          Submitted Info
+        </h1>
+        <div>
+          <h4>Your Name: @ViewBag.Name</h4>
+          <h4>Dojo Location: @ViewBag.Location</h4>
+          <h4>Favorite Language: @ViewBag.Language</h4>
+          <h4>Comment (optional): @ViewBag.Comment</h4>
+          <a href="/" class="btn btn-primary">Go Back</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
